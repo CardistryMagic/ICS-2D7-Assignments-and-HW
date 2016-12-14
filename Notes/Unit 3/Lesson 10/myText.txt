@@ -1,0 +1,4 @@
+42
+2.112
+false
+This is how you put a variable to file

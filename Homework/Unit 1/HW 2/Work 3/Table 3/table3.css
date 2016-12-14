@@ -1,0 +1,33 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+td.heading {
+	text-align: center;
+}
+
+td {
+	padding:3px;
+}
+
+caption {
+	text-align: center;	
+}
+
+td.red {
+	color: red;
+}
+
+td.green {
+	color: green;
+}
+
+td.center {
+	text-align: center;
+}

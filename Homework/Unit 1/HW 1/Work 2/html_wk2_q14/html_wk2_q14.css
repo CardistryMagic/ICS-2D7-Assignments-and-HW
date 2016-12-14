@@ -1,0 +1,45 @@
+p.one {
+	font-size:7px;
+	color:red;
+	font:Times New Roman;
+}
+
+p.two {
+	font-size:10px;
+	color:orange;
+	font-family: courier;
+}
+
+p.three {
+	font-size:19px;
+	color:blue;
+	font-family: Comic Sans Ms;
+}
+
+p.four {
+	font-size:35px;
+	color:green;
+	font-family: Arial;
+}
+
+p.five {
+	font-size:32px;
+	color:cyan;
+	font-family: Script;
+}
+
+p.six {
+	font-size:23px;
+	color:yellow;
+	font-family: Tahoma;
+}
+
+p.seven {
+	font-size:38px;
+	color:purple;
+	font-family: Impact;
+}
+
+div {
+	line-height: 10%;
+}

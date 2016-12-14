@@ -1,0 +1,470 @@
+/* fonts */
+
+@font-face
+{
+	font-family: "Adelle Sans W01 Thin";
+	src: url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.eot");
+	/* IE9*/
+
+	src: url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.eot?#iefix") format("embedded-opentype"),
+	/* IE6-IE8 */
+
+	url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.woff2") format("woff2"),
+	/* chrome、firefox */
+
+	url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.woff") format("woff"),
+	/* chrome、firefox */
+
+	url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.ttf") format("truetype"),
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+	url("fonts/Adelle/cd57a6d45e900c971cf5484e22b96c44.svg#Adelle Sans W01 Thin") format("svg");
+	/* iOS 4.1- */
+
+}
+
+@font-face
+{
+	font-family: "Open Sans Light";
+	src: url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.eot");
+	/* IE9*/
+
+	src: url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.eot?#iefix") format("embedded-opentype"),
+	/* IE6-IE8 */
+
+	url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.woff2") format("woff2"),
+	/* chrome、firefox */
+
+	url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.woff") format("woff"),
+	/* chrome、firefox */
+
+	url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.ttf") format("truetype"),
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+	url("fonts/openSans/1bf71be111189e76987a4bb9b3115cb7.svg#Open Sans Light") format("svg");
+	/* iOS 4.1- */
+
+}
+
+@font-face
+{
+	font-family: "District Pro W01 Thin";
+	src: url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.eot");
+	/* IE9*/
+
+	src: url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.eot?#iefix") format("embedded-opentype"),
+	/* IE6-IE8 */
+
+	url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.woff2") format("woff2"),
+	/* chrome、firefox */
+
+	url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.woff") format("woff"),
+	/* chrome、firefox */
+
+	url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.ttf") format("truetype"),
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+	url("fonts/DistrictProThin/a1854255b022d7a3e6a46d0379981c7b.svg#District Pro W01 Thin") format("svg");
+	/* iOS 4.1- */
+
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "Zebrzil";
+	src: url("fonts/Zebrzil/zebrzil.eot");
+	/* IE9*/
+
+	src: url("fonts/Zebrzil/zebrzil.eot?#iefix") format("embedded-opentype"),
+	/* IE6-IE8 */
+
+	url("fonts/Zebrzil/zebrzil.woff2") format("woff2"),
+	/* chrome、firefox */
+
+	url("fonts/Zebrzil/zebrzil.woff") format("woff"),
+	/* chrome、firefox */
+
+	url("fonts/Zebrzil/zebrzil.ttf") format("truetype"),
+	/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+	url("fonts/Zebrzil/zebrzil.svg#Zebrzil") format("svg");
+	/* iOS 4.1- */
+
+}
+
+/* background image */
+
+#bg_main
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+/* menu */
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+li.menu
+{
+	float: left;
+}
+
+li.menu a,
+.dropbtn
+{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li.menu a:hover,
+.dropdown:hover .dropbtn
+{
+	background-color: red;
+}
+
+li.dropdown
+{
+	display: inline-block;
+}
+
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a
+{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover
+{
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+div.menucontent
+{
+	font-size: 1em;
+	font-family: "Open Sans Light";
+	color: #23238e;
+}
+
+/* home */
+
+
+.homewhitetext
+{
+	color: white;
+}
+
+h1.homewhitetext
+{
+	font-family: "Zebrzil";
+	font-size: 3.5em;
+	text-align: center;
+	margin: 1% 0px 1% 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.invisible
+{
+	visibility: hidden;
+}
+
+/* decks */
+
+
+.deckswhitetext
+{
+	color: white;
+}
+
+.deck
+{
+	float: left;
+	margin: 0.5%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	max-width: 30%;
+	height: auto;
+	/*border: 5px solid #1a1a1a;*/
+
+}
+
+h1.deckswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 4em;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h2.deckswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 2em;
+	text-align: left;
+	margin: 0px 0px 0px 1%;
+	padding: 0px 0px 0px 0px;
+}
+
+h3.deckswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 1.5em;
+	text-align: left;
+	margin: 58% 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.cf
+{
+	position: relative;
+}
+
+img.cf
+{
+	position: absolute;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+img.top:hover
+{
+	opacity: 0;
+}
+
+p.deckswhitetext
+{
+	font-family: "Adelle Sans W01 Thin";
+	margin: 2.5% 0px 0px 0px;
+}
+
+.maxwidth
+{
+	max-width: 100%;
+}
+
+/* references */
+
+
+.referenceswhitetext
+{
+	color: white;
+}
+
+h1.referenceswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 4em;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h2.referenceswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 2em;
+	text-align: left;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h3.referenceswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 1.5em;
+	text-align: left;
+	margin: 58% 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+p.referenceswhitetext
+{
+	font-family: "Adelle Sans W01 Thin";
+	margin: 30px 0px 5px 0px;
+}
+
+p.referenceswhitetexttab
+{
+	font-family: "Adelle Sans W01 Thin";
+	margin: 0px 0px 0px 40px;
+	color: white;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a p:hover
+{
+	text-decoration: underline;
+}
+
+/* routines */
+
+h1.routineswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 4em;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h2.routineswhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 2em;
+	text-align: left;
+	margin: 0px 0px 0px 1%;
+	padding: 0px 0px 0px 0px;
+}
+
+.routineswhitetext
+{
+	color: white;
+}
+
+/* magicians */
+
+.magicianwhitetext
+{
+	color: white;
+}
+
+.magician
+{
+	margin: 0.5%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	max-width: 100%;
+	height: auto;
+	/*border: 5px solid #1a1a1a;*/
+
+}
+
+h1.magicianwhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 4em;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+h2.magicianwhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 2em;
+	text-align: left;
+	margin: 0px 0px 0px 1%;
+	padding: 0px 0px 0px 0px;
+}
+
+h3.magicianwhitetext
+{
+	font-family: "District Pro W01 Thin";
+	font-size: 1.5em;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.magiciantext
+{
+	margin: 0px 0px 0px 42.5%;
+	padding: 0px 0px 0px 0px;
+}
+
+p.magicianwhitetext
+{
+	font-family: "Adelle Sans W01 Thin";
+	text-align:left;
+	margin: 0px 0px 0px 0px;
+}
+
+.maxwidth
+{
+	max-width: 100%;
+}
+
+.cardMagic
+{
+	float: left;
+	margin: 0.5%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	width: 30%;
+	max-width: 30%;
+	height: auto;
+	/*border: 5px solid #1a1a1a;*/
+
+}
+
+.lightboxcontainer {
+  width:100%;
+  text-align:left;
+}
+.lightboxleft {
+  width: 100%;
+  float:left;
+}
+.lightboxright {
+  width: 60%;
+  float:left;
+}
+.lightboxright iframe {
+  min-height: 390px;
+}
+.divtext {
+  margin: 36px;
+}
+@media (max-width: 800px) {
+  .lightboxleft {
+    width: 100%;
+  }
+  .lightboxright {
+    width: 100%;
+  }
+  .divtext {
+    margin: 12px;
+  }
+}

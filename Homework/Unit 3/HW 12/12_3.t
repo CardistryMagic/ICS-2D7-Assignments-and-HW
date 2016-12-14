@@ -1,0 +1,6 @@
+setscreen("graphics")
+Draw.FillBox (0, 0, 639, 360, white)
+Draw.FillBox (0, 0, 180, 360, red)
+Draw.FillBox (460, 0, 639, 360, red)
+Draw.FillMapleLeaf (190, 50, 450, 300, red)
+Draw.Line (180, 360, 460, 360, black)

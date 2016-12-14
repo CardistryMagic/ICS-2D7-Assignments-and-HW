@@ -1,0 +1,31 @@
+table.doubleborder, td {
+    border: 1px solid black;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+td.heading {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+td {
+	padding:3px;
+}
+
+p {
+    text-align:left;
+}
+
+caption {
+	text-align: center;	
+}
+
+tr.darkbackground {
+	background-color: #424242;	
+	color: white;
+}
