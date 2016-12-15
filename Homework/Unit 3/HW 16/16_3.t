@@ -7,6 +7,7 @@ forward procedure calculateTwoRoots (var a, b, c : int)
 forward procedure noRealRoots
 forward procedure displayWholeEquation (var coefficientA, coefficientB, coefficientC : int)
 
+%declaration/process
 body procedure calculateDiscriminants
     if (b ** 2) - (4 * a * c) > 0 then
 	calculateTwoRoots (a, b, c)
@@ -46,7 +47,7 @@ body procedure displayWholeEquation
 end displayWholeEquation
 
 loop
-    %output
+    %input
     put "Enter 0 as all the parameters to terminate the program."
     put "Please enter the coefficient a: " ..
     get aInput
@@ -55,5 +56,6 @@ loop
     put "Please enter the coefficient c: " ..
     get cInput
     exit when aInput = 0 and bInput = 0 and cInput = 0
+    %output
     calculateDiscriminants (aInput, bInput, cInput)
 end loop
