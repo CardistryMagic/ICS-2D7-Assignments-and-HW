@@ -1,11 +1,11 @@
 %declaration/initialization
-var aInput, bInput, cInput : int := 1
-var numberOfRealRoots : int
-forward procedure calculateDiscriminants (var a, b, c : int)
-forward procedure calculateOneRoot (var a, b, c : int)
-forward procedure calculateTwoRoots (var a, b, c : int)
+var aInput, bInput, cInput : real := 1
+var numberOfRealRoots : real
+forward procedure calculateDiscriminants (var a, b, c : real)
+forward procedure calculateOneRoot (var a, b, c : real)
+forward procedure calculateTwoRoots (var a, b, c : real)
 forward procedure noRealRoots
-forward procedure displayWholeEquation (var coefficientA, coefficientB, coefficientC : int)
+forward procedure displayWholeEquation (var coefficientA, coefficientB, coefficientC : real)
 
 %declaration/process
 body procedure calculateDiscriminants
@@ -22,7 +22,7 @@ body procedure calculateOneRoot
     var root : real
     displayWholeEquation (a, b, c)
     root := (-b + sqrt ((b ** 2) - (4 * a * c))) / (2 * a)
-    put "There is only one root to this equation: ", root
+    put "There is only one real root to this equation: ", root
     put " "
 end calculateOneRoot
 
@@ -31,7 +31,7 @@ body procedure calculateTwoRoots
     displayWholeEquation (a, b, c)
     root1 := (-b + sqrt ((b ** 2) - (4 * a * c))) / (2 * a)
     root2 := (-b - sqrt ((b ** 2) - (4 * a * c))) / (2 * a)
-    put "There are two roots to this equation: ", root1, " and ", root2
+    put "There are two real roots to this equation: ", root1, " and ", root2
     put " "
 end calculateTwoRoots
 
