@@ -7,7 +7,7 @@ forward procedure calculateTwoRoots (var a, b, c : real)
 forward procedure noRealRoots
 forward procedure displayWholeEquation (var coefficientA, coefficientB, coefficientC : real)
 
-%declaration/process
+%process
 body procedure calculateDiscriminants
     if (b ** 2) - (4 * a * c) > 0 then
 	calculateTwoRoots (a, b, c)
