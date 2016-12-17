@@ -1,0 +1,28 @@
+%declaration
+var count : int
+var temporaryVariable : string
+
+var numbers : flexible array 1 .. 0 of real
+
+function smallest (numbersForFunction : array 1 .. 99999999 of real, numberOfRepeats : int) : real
+    var smallestReal : real := maxint
+    for currentCompare : 1 .. numberOfRepeats by 1
+	if numbersForFunction (currentCompare) < smallestReal then
+	    
+	end if
+    end for
+end smallest
+
+%input
+loop
+    count := 0
+    loop
+	count += 1
+	put "Please enter the number for element #", count, " or 'quit' to exit: " ..
+	get temporaryVariable : *
+	exit when temporaryVariable = "quit"
+	new numbers, count
+	numbers (count) := strint (temporaryVariable)
+    end loop
+    put " "
+end loop
