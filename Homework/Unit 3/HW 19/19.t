@@ -75,7 +75,7 @@ proc DrawFontSmall (filled : boolean)
     DrawFont (font, cb2, 150)
 end DrawFontSmall
 proc Erase (filled : boolean)
-    cls
+    GUI.SetBackgroundColor (clr)
     GUI.SetCheckBox (cb1, false)
     GUI.SetCheckBox (cb2, false)
     GUI.SetCheckBox (cb3, false)
