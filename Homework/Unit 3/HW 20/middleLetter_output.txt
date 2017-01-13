@@ -1,0 +1,4 @@
+The word has an even number of letters
+The word has an even number of letters
+The middle letter is g
+The word has an even number of letters
