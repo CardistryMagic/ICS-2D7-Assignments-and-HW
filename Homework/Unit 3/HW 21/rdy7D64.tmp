@@ -1,0 +1,19 @@
+var currentLine : string
+var streamInput, streamOutput : int
+
+open : streamInput, "change_capital_input.txt", get
+open : streamOutput, "change_capital_output.txt", put
+
+loop
+    exit when eof (streamInput)
+    get : streamInput, currentLine
+    for currentLetter : 2 .. length (currentLine) - 1 by 1
+	if "A" <= currentLine (currentLetter) and currentLine (currentLetter) <= "Z" then
+	    currentLine (currentLetter) := chr (ord (letter) + (ord ("a") - ord ("A")))
+	end if
+
+    end for
+end loop
+
+close : streamInput
+close : streamOutput

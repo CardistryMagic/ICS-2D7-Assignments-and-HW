@@ -1,0 +1,13 @@
+var a, e, i, o, u, totalLetters, totalVowels : int := 0
+var currentWord : string
+var stream : int
+
+open : stream, "vowel_usage.txt", get
+
+loop
+    exit when eof (stream)
+    
+end loop
+
+close : stream
+

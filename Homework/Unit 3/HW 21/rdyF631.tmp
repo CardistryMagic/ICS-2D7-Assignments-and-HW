@@ -1,0 +1,16 @@
+var file1Choice, file2Choice : string
+var streamInput, streamOutput : int
+
+put "Please enter the name of the input file: " ..
+get file1Choice : *
+
+put "Please enter the name of the output file: " ..
+get file2Choice : *
+
+open streamInput
+
+loop
+    exit when eof (file1Choice)
+    
+    exit when eof (file1Choice)
+end loop

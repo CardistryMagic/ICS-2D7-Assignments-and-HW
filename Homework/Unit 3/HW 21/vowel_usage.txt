@@ -1,0 +1,15 @@
+var allLines : flexible array 1 .. 0 of string
+var count : int := 0
+var inputStream, outputStream : int
+var allCorrect : boolean
+
+open : inputStream, "remove_punctuation.txt", get
+
+loop
+    exit when eof (inputStream)
+    count += 1
+    new allLines, count
+    get : inputStream, allLines (count) : *
+end loop
+
+close : inputStream
