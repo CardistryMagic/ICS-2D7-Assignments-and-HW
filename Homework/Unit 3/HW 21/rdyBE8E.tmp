@@ -1,9 +1,0 @@
-var currentLine : string
-var pos, inputStream : int
-
-open : inputStream, "search_pattern.txt", get
-
-loop
-    exit when eof (inputStream)
-    
-end loop

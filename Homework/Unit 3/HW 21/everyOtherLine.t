@@ -17,3 +17,6 @@ loop
     get : streamInput, currentLine : *
     put : streamOutput, currentLine
 end loop
+
+close : streamInput
+close : streamOutput
