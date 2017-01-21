@@ -1,0 +1,70 @@
+import GUI
+
+var numberButtons : array 0 .. 11 of int
+var calculationButtons : array 1 .. 4 of int
+var outputButtons : array 1 .. 4 of int
+var textField : int
+var position : int := 0
+var stringEquation : string := ""
+var font1 : int
+font1 := Font.New ("Arial :12")
+
+forward makeGUI
+
+proc clearAndUpdateTextBox
+    put "Hi"
+end clearAndUpdateTextBox
+
+body proc makeGUI
+    outputButtons (1) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 185, 65, "CE", clearAndUpdateTextBox)
+    outputButtons (2) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 185, 65, "C", clearAndUpdateTextBox)
+    outputButtons (3) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 185, 65, "<--", clearAndUpdateTextBox)
+    calculationButtons (1) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 185, 65, "÷", clearAndUpdateTextBox)
+    numberButtons (7) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 150, 65, "7", clearAndUpdateTextBox)
+    numberButtons (8) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 150, 65, "8", clearAndUpdateTextBox)
+    numberButtons (9) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 150, 65, "9", clearAndUpdateTextBox)
+    calculationButtons (2) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 150, 65, "x", clearAndUpdateTextBox)
+    numberButtons (4) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 115, 65, "4", clearAndUpdateTextBox)
+    numberButtons (5) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 115, 65, "5", clearAndUpdateTextBox)
+    numberButtons (6) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 115, 65, "6", clearAndUpdateTextBox)
+    calculationButtons (3) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 115, 65, "-", clearAndUpdateTextBox)
+    numberButtons (1) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 80, 65, "1", clearAndUpdateTextBox)
+    numberButtons (2) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 80, 65, "2", clearAndUpdateTextBox)
+    numberButtons (3) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 80, 65, "3", clearAndUpdateTextBox)
+    calculationButtons (4) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 80, 65, "+", clearAndUpdateTextBox)
+    numberButtons (11) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 45, 65, "pi", clearAndUpdateTextBox)
+    numberButtons (0) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 45, 65, "0", clearAndUpdateTextBox)
+    numberButtons (10) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 45, 65, ".", clearAndUpdateTextBox)
+    outputButtons (4) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 45, 65, "=", clearAndUpdateTextBox)
+end makeGUI
+
+setscreen ("graphics:350;420")
+
+Draw.FillBox (0, 0, 350, 420, black)
+
+textField := GUI.CreateTextBoxFull (25, 245, 300, 150, 1, font1)
+
+outputButtons (1) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 185, 65, "CE", clearAndUpdateTextBox)
+outputButtons (2) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 185, 65, "C", clearAndUpdateTextBox)
+outputButtons (3) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 185, 65, "<--", clearAndUpdateTextBox)
+calculationButtons (1) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 185, 65, "÷", clearAndUpdateTextBox)
+numberButtons (7) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 150, 65, "7", clearAndUpdateTextBox)
+numberButtons (8) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 150, 65, "8", clearAndUpdateTextBox)
+numberButtons (9) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 150, 65, "9", clearAndUpdateTextBox)
+calculationButtons (2) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 150, 65, "x", clearAndUpdateTextBox)
+numberButtons (4) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 115, 65, "4", clearAndUpdateTextBox)
+numberButtons (5) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 115, 65, "5", clearAndUpdateTextBox)
+numberButtons (6) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 115, 65, "6", clearAndUpdateTextBox)
+calculationButtons (3) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 115, 65, "-", clearAndUpdateTextBox)
+numberButtons (1) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 80, 65, "1", clearAndUpdateTextBox)
+numberButtons (2) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 80, 65, "2", clearAndUpdateTextBox)
+numberButtons (3) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 80, 65, "3", clearAndUpdateTextBox)
+calculationButtons (4) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 80, 65, "+", clearAndUpdateTextBox)
+numberButtons (11) := GUI.CreateButton ((25 + ((80 * (1 - 1)))), 45, 65, "pi", clearAndUpdateTextBox)
+numberButtons (0) := GUI.CreateButton ((25 + ((80 * (2 - 1)))), 45, 65, "0", clearAndUpdateTextBox)
+numberButtons (10) := GUI.CreateButton ((25 + ((80 * (3 - 1)))), 45, 65, ".", clearAndUpdateTextBox)
+outputButtons (4) := GUI.CreateButton ((25 + ((80 * (4 - 1)))), 45, 65, "=", clearAndUpdateTextBox)
+
+loop
+    exit when GUI.ProcessEvent
+end loop
